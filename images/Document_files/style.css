@@ -1,0 +1,33 @@
+main {
+ flex-direction: column;
+}
+
+section:nth-of-type(1){
+    max-width: 100%;
+    position: relative;
+}
+
+section:nth-of-type(1) img{
+    left: 3em;
+    width: 90%;
+}
+
+section:nth-of-type(2){
+    display: grid;
+}
+
+section:nth-of-type(3){
+    position: relative;
+}
+
+section button{
+    position: absolute;
+    left: 70px;
+    background-color: #016ace; 
+    border: 1px;
+    color: white;
+    width: 13.75rem;
+    height: 2.813rem;
+    display: inline-block;
+    font-size: 16px;
+  }

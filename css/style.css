@@ -38,8 +38,7 @@ section:nth-of-type(2){
 }
 
 section:nth-of-type(2) img{
-    width: 60%;
-    
+    width: 60%;    
 }
 
 section:nth-of-type(3){
@@ -74,4 +73,117 @@ section:nth-of-type(5) img{
 section:nth-of-type(6) img{
     left: 3em;
     width: 100%;
+}
+
+section:nth-of-type(7){
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 23em;
+    width: 17em;
+}
+
+section:nth-of-type(7) section:nth-of-type(1){
+    padding: 0em 0.5em 0em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #3476b6;
+}
+
+section:nth-of-type(7) section:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 1em 2em 0em 0em;
+    margin-top: -38px;
+}
+
+section:nth-of-type(7) section:nth-of-type(3){
+    padding: 2px 16px;
+}
+
+section:nth-of-type(7) section:nth-of-type(3) h4{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 0em;
+}
+
+section:nth-of-type(7) section:nth-of-type(3) p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    line-height: 0em;
+}
+
+section:nth-of-type(7) section:nth-of-type(4){
+    position: relative;
+    right: 45px;
+    margin-top: 0;
+}
+
+section:nth-of-type(7) section:nth-of-type(4) button{
+    font-size: 14px;
+    border-radius: 1em;
+    box-shadow: 0em 0em 1em 0em #00000070;
+}
+
+section:nth-of-type(8){
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 12.5px;
+    text-align: center;
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(9){
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+section:nth-of-type(9) img{
+    width: 345px;
+    margin-left: 7px;
+}
+
+section:nth-of-type(10){
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 12.5px;
+    text-align: center;
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section:nth-of-type(11){
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 27em;
+    width: 19em;
+    border-radius: 10px
+}
+
+section:nth-of-type(11) li:nth-of-type(1) h2{
+    
+    text-align: left;
+    font-size: 1em;
+    color: #000;
+}
+
+section:nth-of-type(11) li:nth-of-type(2) img{
+    width: 350px;
+    position: relative;
+    right: 0em;
+    top: -5.3em;
+
 }
