@@ -1,77 +1,803 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 
-main {
- flex-direction: column;
+
+html, body{
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
 }
 
 h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+    text-align: left;
+    text-transform: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 2.25em;
+    margin-left: 0.5em;
+    width: 95%;
 }
 
 h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
 }
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
 p{
     font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
-section:nth-of-type(1){
-    max-width: 100%;
+ul {
+    list-style-type: none;
+}
+
+main article:nth-of-type(1) img{
+    margin-left: 0.5em;
+    width: 96%;
     position: relative;
 }
 
-section:nth-of-type(1) img{
-    left: 3em;
-    width: 100%;
+/* Fixture Start */
+
+figure:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    flex-flow: wrap;
+    margin-left: 55px;
 }
 
-section:nth-of-type(2){
- display: grid;
- grid-template-columns: 10fr 10fr 10fr; 
- grid-gap:1em; 
- align-items: center;
- margin-top: 50px;
- margin-left: 40px;
+figure:nth-of-type(1) img:nth-of-type(1){
+    width: 80px;    
 }
 
-section:nth-of-type(2) img{
-    width: 60%;
-    
+figure:nth-of-type(1) img:nth-of-type(2){
+    width: 70px;    
 }
 
-section:nth-of-type(3){
-    position: relative;
+figure:nth-of-type(1) img:nth-of-type(3){
+    width: 80px;    
 }
 
-section button{
-    position: absolute;
-    left: 70px;
-    background-color: #016ace; 
+/* BUTTON ANIMATION */
+
+figure:nth-of-type(1) button{
+    background: #016ace;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
     border: 1px;
     color: white;
-    width: 13.75rem;
-    height: 2.813rem;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 34px;
+    width: 13.75em;
+    transition: all 0.3s ease-in-out 0s;
+    height: 2.813em;
+    margin-left: 34px;
+}s
+
+/* BUTTON ANIMATION END*/
+
+/* Benzema Bio */
+
+.benzemabody article:nth-of-type(2) h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-left: 0.53em;
+    border-bottom: 3px solid #c7b184;
+    margin-right: 0.5em;
 }
 
-section:nth-of-type(4){
+.benzemabody article:nth-of-type(1) img:nth-of-type(1){
+    width: 100%;
     position: relative;
-    margin-top: 155px;
+    margin-left: 0;
+}
+
+.benzemabody article:nth-of-type(1) img:nth-of-type(2){
+    width: 375px;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    z-index: 2;
+}
+
+.benzemabody article:nth-of-type(1) h1{
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    margin-bottom: 41px;
+    font-weight: bold;
+    margin-left: 0;
+    font-size: 3em;
+    width: 100%;
+    position: relative;
+    top: -3.2em;
+    z-index: 2;
 }
 
-section:nth-of-type(5) img{
-    left: 3em;
+.benzemabody article:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    position: relative;
+    top: -8.5em;
+    z-index: 2;
+}
+
+.benzemabody article:nth-of-type(2) h3{
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    margin-left: 0.5em;
+}
+
+.benzemabody article:nth-of-type(2) p{
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 0.5em;
     width: 100%;
 }
 
-section:nth-of-type(6) img{
-    left: 3em;
+.benzemabody article:nth-of-type(2) article:nth-of-type(1){
+    display: inline-block;
+    margin-left: 0;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(2){
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    text-align: justify;
+    margin-left: 12em;
+}
+
+/* Benzema Bio End */
+
+/* Honours */
+
+.benzemabody article:nth-of-type(3) h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-left: 0.53em;
+    border-bottom: 3px solid #c7b184;
+    margin-right: 0.5em;
+}
+
+.benzemabody article:nth-of-type(3) article:nth-of-type(1) img{
+    width: 100px;
+}
+
+.benzemabody article:nth-of-type(3) article:nth-of-type(1) h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 10px -132px 44px -12px;
+}
+
+.benzemabody article:nth-of-type(3) article:nth-of-type(1) p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px 14px;
+    display: inline;
+    margin-left: 0;
+    text-align: left;
+}
+
+.benzemabody article:nth-of-type(3) article:nth-of-type(2) p{
+    text-align: right;
+    margin-right: 0.5em;
+    width: 90%;
+    line-height: 0;
+}
+
+/* Honours End */
+
+
+/* Real Madrid Jerseys */
+.benzemabody article:nth-of-type(4){
+   position: relative;
+}
+
+.benzemabody article:nth-of-type(5){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+#allbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.benzemabody #home, #away, #third{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#home{
+    background-color: #b4b4b4;
+    margin: 0;
+}
+
+#away{
+    background-color: #7165b9;
+}
+
+#third{
+    background-color: black;
+}
+
+#home:hover, #away:hover, #third:hover{
+    border: #d89300;
+    border-style: solid;
+    border-width: 3px;
+}
+
+/* Real Madrid Jerseys End */
+
+.benzemabody article:nth-of-type(5) img{
     width: 100%;
 }
+
+/* Photo Gallery Benzema */
+
+article:nth-of-type(4) h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-left: 0.53em;
+    border-bottom: 3px solid #c7b184;
+    margin-right: 0.5em;
+}
+
+.benzemabody article:nth-of-type(4) {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.benzemabody article:nth-of-type(4) img{
+    width: 100%;
+}
+
+/* Photo Gallery Benzema End */
+
+
+/* News Start */
+
+article:nth-of-type(2) img{
+    width: 96%;
+    margin-left: 0.5em;
+}
+
+article:nth-of-type(2) h3{
+    position: relative;
+    margin-left: 0.5em;
+    width: 90%;
+}
+
+article:nth-of-type(2) p {
+    position: relative;
+    margin-left: 0.5em;
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+/* News End */
+
+/* UPCOMING FIXTURE CARD */
+
+.indexmain article:nth-of-type(3) article:nth-of-type(1){
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 17em;
+    margin-left: 0.5em;
+    padding: 0px 0px 19px 0px;
+}
+
+.indexmain article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(1), article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(2){
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 0px 14px;
+    display: inline;
+    font-size: 2em;
+    color: #3476b6;
+} 
+
+.mainindex article:nth-of-type(3) article:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) img {
+    position: relative;
+    margin: 25px 14px;
+}
+
+article:nth-of-type(3) button{
+    padding: 0em 0.5em 0em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #3476b6;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3){
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    line-height: 0em;
+    position: relative;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(4){
+    font-weight: bolder;
+    text-align: center;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(5){
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    line-height: 0em;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) button{
+    font-weight: normal;
+    font-size: 0.9em;
+    background-color: #016ace;
+    border: 1px;
+    color: white;
+    width: 13.75em;
+    text-align: center;
+    height: 2.813em;
+    margin: 26px 0px 0px 32px;
+}
+
+/* UPCOMING FIXTURE CARD END */
+
+/* PHOTOS GALLERY START */
+
+figure:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure:nth-of-type(2) img{
+    width: 360px;
+    position: relative;
+    margin-bottom: 0.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+/* PHOTOS GALLERY END */
+
+/* PLAYERS CARD 1 */
+
+article:nth-of-type(4) h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+article:nth-of-type(4) article:nth-of-type(1){
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 27em;
+    width: 19em;
+    border-radius: 10px;
+    background-color: #ffffffc7;
+    background-image: linear-gradient(360deg, #000000c7, transparent);
+    margin-left: 0.5em
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    color: #000000c7;
+    font-weight: bolder;
+    margin-left: -1.5em;
+    padding: 28px 0px 0px 12px;
+    margin-bottom: -1em;
+    border-bottom: none;
+    letter-spacing: 0px;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    color: dimgrey;
+    font-weight: bolder;
+    margin-bottom: -3em;
+    margin-left: -1.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    color: black;
+    font-weight: bolder;
+    margin-left: -0.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(2) img{
+    width: 350px;
+    position: relative;
+    right: 0em;
+    top: -11.2em;
+    left: 0em;
+}
+
+/* PLAYERS CARD 1 END */
+
+/* PLAYERS CARD  2 START */
+
+article:nth-of-type(4) h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+article:nth-of-type(4) article:nth-of-type(2){
+    margin-left: 0.5em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 27em;
+    width: 19em;
+    border-radius: 10px;
+    background-color: #ffffffc7;
+    background-image: linear-gradient(360deg, #000000c7, transparent);
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    color: #000000c7;
+    font-weight: bolder;
+    margin-left: -1em;
+    padding: 28px 0px 0px 0px;
+    margin-bottom: -1em;
+    border-bottom: none;
+    letter-spacing: 0px;
+
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) p:nth-of-type(1){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    color: dimgrey;
+    font-weight: bolder;
+    margin-bottom: -3em;
+    margin-left: -1.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) p:nth-of-type(2){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    color: black;
+    font-weight: bolder;
+    margin-left: -0.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(2) img{
+    width: 350px;
+    position: relative;
+    right: 0em;
+    top: -14.2em;
+    left: 0em;
+}
+
+.indexmain article:nth-of-type(4){
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+/* PLAYERS CARD 2 END */
+
+
+/* TROPHIES START */
+
+article:nth-of-type(10){
+    position: relative;
+    top: 17em;
+}
+
+article:nth-of-type(5) h2{
+    color: #555;
+    font-size: 2em;
+    letter-spacing: 14.5px;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) {
+    box-sizing: border-box;
+    position: relative;
+    margin: -16px 42px 0px -11px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1){
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li{
+    flex-direction: column;
+    padding: 1em;
+    padding-right: 0px;
+    display: flex;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) img{
+    width: 100px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+    margin: 15px 0 0 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
+    width: 100%;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+    width: 100%;
+    max-width: 9.375em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) img{
+    width: 100px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(1){
+    margin: 15px 0 0 49px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
+    width: 100%;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(2){
+    width: 100%;
+    height: 3.125em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) img{
+    width: 100px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(1){
+    margin: 15px 0 0 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
+    width: 100%;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(2){
+    width: 100%;
+    max-width: 9.375em;
+    height: 3.125em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/* TROPHIES END */
+
+/* Footer */
+
+footer{
+    background-color: #F0F0F0;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 0.94em;
+    letter-spacing: 0.14em;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    padding-bottom: 0.75em;
+    position: relative;
+    top: 3em;
+    text-transform: uppercase;
+}
+
+footer article ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer article ul li{
+    padding: 1em;
+}
+
+footer article ul li img{
+    width: 5em;
+}
+footer article:nth-of-type(3){
+    position: relative;
+    left: -1em;
+}
+
+footer article:nth-of-type(3) li{
+    width: 32%;
+}
+
+footer article:nth-of-type(4){
+    position: relative;
+    left: 2em;
+    top: -3em;
+}
+
+/* FOOTER END */
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    html{background-color: black;}
+
+    h1{
+        color: #EE324E;
+    }
+
+    h2{
+        color: #c5ff2b;
+    }
+
+    h3{
+        color: #7165b9;
+    }
+
+    p{
+        color: white;
+    }
+
+    figure:nth-of-type(1) img:nth-of-type(2){
+        background-color: white;
+        padding: 0.5em;
+    }
+
+    article:nth-of-type(4) article:nth-of-type(1){
+        background-image: linear-gradient(308deg, #7165b940, #7165b9);
+    }
+
+    article:nth-of-type(4) article:nth-of-type(2){
+        background-image: linear-gradient(308deg, #7165b940, #7165b9);
+    }
+
+    article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
+        color: white;
+    }
+
+    article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) h2{
+        color: white;
+    }
+
+    article:nth-of-type(5) h2{
+        color: #c5ff2b;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+        color: white;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(2){
+        color: white;
+    }
+
+    
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(2){
+        color: white;
+    }
+}
+
+ @keyframes ruzie-animation {
+    0% {
+      transform:rotate(0);
+    }
+    100% {
+      transform:rotate(1turn);
+    }
+  }
+
+  figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
+    animation-name:ruzie-animation;
+    animation-duration:.3s;
+    animation-iteration-count:10;
+  }
+
+  figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
+    animation-direction:reverse;
+  }
