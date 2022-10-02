@@ -1,14 +1,14 @@
 
 function home(){
-    document.getElementById("imageslider") .src="/images/RM_Home.png";
+    document.getElementById("imageslider") .src="images/RM_Home.png";
 }
 
 function away(){
-    document.getElementById("imageslider") .src="/images/RM_Away.png";
+    document.getElementById("imageslider") .src="images/RM_Away.png";
 }
 
 function third(){
-    document.getElementById("imageslider") .src="/images/RM_Third.png";
+    document.getElementById("imageslider") .src="images/RM_Third.png";
 }
 
 document.getElementById("home").addEventListener("click", home);
