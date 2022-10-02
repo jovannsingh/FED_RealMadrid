@@ -18,6 +18,7 @@ h1{
     font-size: 2.25em;
     margin-left: 0.5em;
     width: 95%;
+    cursor: pointer;
 }
 
 h2{
@@ -42,9 +43,29 @@ ul {
     list-style-type: none;
 }
 
+header{
+    position: sticky;
+    top: 0em;
+    z-index: 1;
+}
+
+nav{
+    background-color: white;
+    border-bottom: solid black;
+}
+
+nav img{
+    width: 2em;
+    padding: 0.2em 0.5em 0em 0.5em;
+}
+
+nav img{
+    cursor: pointer;
+}
+
+
 main article:nth-of-type(1) img{
-    margin-left: 0.5em;
-    width: 96%;
+    width: 100%;
     position: relative;
 }
 
@@ -53,10 +74,9 @@ main article:nth-of-type(1) img{
 figure:nth-of-type(1){
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5em;
     align-items: center;
     flex-flow: wrap;
-    margin-left: 55px;
 }
 
 figure:nth-of-type(1) img:nth-of-type(1){
@@ -75,14 +95,15 @@ figure:nth-of-type(1) img:nth-of-type(3){
 
 figure:nth-of-type(1) button{
     background: #016ace;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
     border: 1px;
     color: white;
     width: 13.75em;
     transition: all 0.3s ease-in-out 0s;
     height: 2.813em;
-    margin-left: 34px;
-}s
+    margin-left: 48px;
+    border-radius: 8px;
+    box-shadow: 0em 0.188em 0.375em #00000029;
+}
 
 /* BUTTON ANIMATION END*/
 
@@ -107,9 +128,9 @@ figure:nth-of-type(1) button{
 
 .benzemabody article:nth-of-type(1) img:nth-of-type(2){
     width: 375px;
-    position: absolute;
+    /* position: absolute;
     top: 4em;
-    left: 2em;
+    left: 2em; */
     z-index: 2;
 }
 
@@ -120,9 +141,9 @@ figure:nth-of-type(1) button{
     margin-left: 0;
     font-size: 3em;
     width: 100%;
-    position: relative;
+    /* position: relative;
     top: -3.2em;
-    z-index: 2;
+    z-index: 2; */
 }
 
 .benzemabody article:nth-of-type(1) h2{
@@ -132,9 +153,9 @@ figure:nth-of-type(1) button{
     margin-left: 0;
     letter-spacing: 0;
     text-transform: none;
-    position: relative;
+    /* position: relative;
     top: -8.5em;
-    z-index: 2;
+    z-index: 2; */
 }
 
 .benzemabody article:nth-of-type(2) h3{
@@ -216,6 +237,10 @@ figure:nth-of-type(1) button{
     line-height: 0;
 }
 
+.benzemabody article:nth-of-type(3) article:nth-of-type(2){     
+    margin: -145px 0px 57px 0px;
+}
+
 /* Honours End */
 
 
@@ -228,14 +253,17 @@ figure:nth-of-type(1) button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
+    background: url(/images/shirts-carousel-bg.jpeg);
 }
 
 #allbuttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: 0;
 }
 
 .benzemabody #home, #away, #third{
@@ -287,10 +315,13 @@ article:nth-of-type(4) h2{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    margin-bottom: 2em;
+    margin-left: 0.53em;
 }
 
 .benzemabody article:nth-of-type(4) img{
     width: 100%;
+    animation: none;
 }
 
 /* Photo Gallery Benzema End */
@@ -413,6 +444,19 @@ figure:nth-of-type(2) img{
 
 /* PLAYERS CARD 1 */
 
+
+
+.indexmain article:nth-of-type(4) article:nth-of-type(1) ul li:nth-of-type(1) button{
+    background: #016ace;
+    border: 1px;
+    color: white;
+    width: 9.75em;
+    height: 2.813em;
+    border-radius: 8px;
+    box-shadow: 0em 0.188em 0.375em #00000029;
+    margin: 0px 0px 0px 45px;
+}
+
 article:nth-of-type(4) h2{
     text-align: center;
     text-transform: uppercase;
@@ -427,9 +471,11 @@ article:nth-of-type(4) article:nth-of-type(1){
     width: 19em;
     border-radius: 10px;
     background-color: #ffffffc7;
-    background-image: linear-gradient(360deg, #000000c7, transparent);
+    background-image: linear-gradient(281deg, #000000c7, transparent);
     margin-left: 0.5em
 }
+
+
 
 article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
     font-family: 'Oswald', sans-serif;
@@ -438,10 +484,11 @@ article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
     color: #000000c7;
     font-weight: bolder;
     margin-left: -1.5em;
-    padding: 28px 0px 0px 12px;
+    padding: 2px 0px 0px 12px;
     margin-bottom: -1em;
-    border-bottom: none;
     letter-spacing: 0px;
+    margin-right: 0;
+    border-bottom: 0;
 }
 
 article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
@@ -558,14 +605,13 @@ article:nth-of-type(5) h2{
     font-weight: 300;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    padding-top: 45px;
     text-transform: uppercase;
 }
 
 article:nth-of-type(5) article:nth-of-type(1) {
     box-sizing: border-box;
     position: relative;
-    margin: -16px 42px 0px -11px;
+    margin: -16px 42px 0px 3px;
 }
 
 article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1){
@@ -712,6 +758,102 @@ footer article:nth-of-type(4){
 
 /* FOOTER END */
 
+
+/* H1 Animatie */
+
+header button {
+    display: grid;
+    place-items: center;
+    background-size: 0% 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: .5s;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.7em;
+}
+
+/* alledrie de streepjes */
+header button span {
+    grid-row-start:1;
+    grid-column-start:1;
+    width:1.2em;
+    height:.2em;
+    background-color: black;
+    transition-duration:.5s;
+}
+
+
+/* het eerste streepje */
+header button span:nth-of-type(1) {
+    transform-origin:.275em .1em;
+    transform:
+      translateY(-.4em) 
+      translateX(0) 
+      rotate(0deg) 
+      scalex(1);
+}
+
+/* het tweede streepje */
+header button span:nth-of-type(2){
+    
+}
+
+/* het derde streepje */
+header button span:nth-of-type(3) {
+    transform-origin:calc(100% - .275em) .1em;
+    transform:
+      translateY(.4em) 
+      translateX(0) 
+      rotate(0deg) 
+      scalex(1);
+}
+
+/* het eerste streepje */
+header button.menuOpen {
+    /* de background de hele button laten vullen */
+    background-size:100% 100%;
+  }
+  
+  /* het eerste streepje */
+header button.menuOpen span:nth-of-type(1){
+    transform:
+      translateY(-.4em) 
+      translateX(-.075em) 
+      rotate(-315deg) 
+      scalex(.55);
+}
+  
+  /* het tweede streepje */
+header button.menuOpen span:nth-of-type(2){
+    transform:
+      rotate(-45deg)
+      scalex(1.25);
+}
+  
+  /* het derde streepje */
+header button.menuOpen span:nth-of-type(3){
+    transform:
+      translateY(.4em) 
+      translateX(.075em) 
+      rotate(-315deg) 
+      scalex(.55);
+}
+
+/* H1 Hover Effect */
+
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #EE324E,
+                0 0 25px #EE324E,
+                0 0 50px #EE324E,
+                0 0 100px#EE324E;
+}
+
+
+
 /* dark mode */
 @media (prefers-color-scheme: dark) {
     html{background-color: black;}
@@ -801,3 +943,21 @@ footer article:nth-of-type(4){
   figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
     animation-direction:reverse;
   }
+
+@keyframes zoen-animation {
+    0% {
+      transform:scale(1);
+    }
+    50% {
+        transform:scale(1);
+        transform: skew(20deg,20deg);
+      }
+    100% {
+      transform:scale(2);
+    }
+}
+  
+figure:nth-of-type(2) img:hover{
+    animation-name:zoen-animation;
+    animation-duration:1s;
+}
