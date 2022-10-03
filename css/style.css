@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
 
 html, body{
  width: 100%;
@@ -105,9 +107,59 @@ figure:nth-of-type(1) button{
 
 /* BUTTON ANIMATION END*/
 
-/* Benzema Bio */
+.moon path{
+    fill: transparent;
+    stroke: 10;
+    stroke: red;
 
-.benzemabody article:nth-of-type(2) h2{
+}
+
+/* Benzema Main Introduction */
+
+.benzemabody section article:nth-of-type(1){
+    background-image: url(/images/img_0573.jpg);
+    background-size: 31em;
+    background-repeat: no-repeat;
+    margin: 0;
+} 
+
+.benzemabody section article:nth-of-type(1) img{
+    width: 345px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    top: 6.6em;
+}
+
+.benzemabody section article:nth-of-type(1) h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 0;
+    width: 100%;
+    font-size: 30px;
+    background-color: #7165b9b5;
+    margin: 0;
+    color: white;
+}
+
+.benzemabody section article:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 0;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 18px;
+    background-color: #7165b9b5;
+    color: white;
+    border-bottom: 0;
+}
+
+/* Benzema Personal */
+
+.benzemabody article:nth-of-type(1) h2{
+    font-size: 18px;
     text-align: left;
     text-transform: uppercase;
     font-family: 'Oswald';
@@ -118,69 +170,20 @@ figure:nth-of-type(1) button{
     margin-right: 0.5em;
 }
 
-.benzemabody article:nth-of-type(1) img:nth-of-type(1){
-    width: 100%;
-    position: relative;
-    margin-left: 0;
-}
-
-.benzemabody article:nth-of-type(1) img:nth-of-type(2){
-    width: 375px;
-    /* position: absolute;
-    top: 4em;
-    left: 2em; */
-    z-index: 2;
-}
-
-.benzemabody article:nth-of-type(1) h1{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 0;
-    font-size: 3em;
-    width: 100%;
-    /* position: relative;
-    top: -3.2em;
-    z-index: 2; */
-}
-
-.benzemabody article:nth-of-type(1) h2{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-weight: normal;
-    margin-left: 0;
-    letter-spacing: 0;
-    text-transform: none;
-    /* position: relative;
-    top: -8.5em;
-    z-index: 2; */
-}
-
-.benzemabody article:nth-of-type(2) h3{
-    text-align: left;
-    text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 15px;
-    margin-left: 0.5em;
-}
-
-.benzemabody article:nth-of-type(2) p{
-    text-align: left;
-    text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    margin-left: 0.5em;
-    width: 100%;
-}
-
-.benzemabody article:nth-of-type(2) article:nth-of-type(1){
+.benzemabody section article:nth-of-type(1) article:nth-of-type(2){
     display: inline-block;
-    margin-left: 0;
+    margin: 0;
+    margin-left: 0.5em;
 }
 
-.benzemabody article:nth-of-type(2) article:nth-of-type(2){
+.benzemabody article:nth-of-type(1) article:nth-of-type(3){
+    vertical-align: top;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 11em; 
+}
+
+.benzemabody article:nth-of-type(1) article:nth-of-type(2){
     vertical-align: top;
     display: inline-block;
     text-align: right;
@@ -188,11 +191,36 @@ figure:nth-of-type(1) button{
     margin-left: 12em;
 }
 
+.benzemabody article:nth-of-type(1) h3{
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    margin-left: 0.5em;
+}
+
+.benzemabody article:nth-of-type(1) p{
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 0.5em;
+    width: 100%;
+}
+
+.benzemabody article:nth-of-type(1) article:nth-of-type(1) {
+    display: inline-block;
+    margin-left: 0;
+}
+
 /* Benzema Bio End */
 
 /* Honours */
 
-.benzemabody article:nth-of-type(3) h2{
+.benzemabody article:nth-of-type(2) h2{
+    font-size: 18px;
     text-align: left;
     text-transform: uppercase;
     font-family: 'Oswald';
@@ -203,11 +231,12 @@ figure:nth-of-type(1) button{
     margin-right: 0.5em;
 }
 
-.benzemabody article:nth-of-type(3) article:nth-of-type(1) img{
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) img{
     width: 100px;
+    margin: 19px 8px;
 }
 
-.benzemabody article:nth-of-type(3) article:nth-of-type(1) h3{
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) h3{
     text-align: left;
     text-transform: uppercase;
     font-family: 'Oswald';
@@ -218,7 +247,7 @@ figure:nth-of-type(1) button{
     margin: 10px -132px 44px -12px;
 }
 
-.benzemabody article:nth-of-type(3) article:nth-of-type(1) p{
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) p{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -228,14 +257,14 @@ figure:nth-of-type(1) button{
     text-align: left;
 }
 
-.benzemabody article:nth-of-type(3) article:nth-of-type(2) p{
+.benzemabody article:nth-of-type(2) article:nth-of-type(2) p{
     text-align: right;
     margin-right: 0.5em;
     width: 90%;
     line-height: 0;
 }
 
-.benzemabody article:nth-of-type(3) article:nth-of-type(2){     
+.benzemabody article:nth-of-type(2) article:nth-of-type(2){     
     margin: -145px 0px 57px 0px;
 }
 
@@ -247,13 +276,13 @@ figure:nth-of-type(1) button{
    position: relative;
 }
 
-.benzemabody article:nth-of-type(5){
+.benzemabody article:nth-of-type(4){
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     height: auto;
-    background: url(../images/carousel_bg.jpeg);
+    background: url(/images/carousel_bg.jpeg);
 }
 
 #allbuttons{
@@ -262,6 +291,8 @@ figure:nth-of-type(1) button{
     justify-content: space-evenly;
     cursor: pointer;
     margin: 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .benzemabody #home, #away, #third{
@@ -278,10 +309,14 @@ figure:nth-of-type(1) button{
 
 #away{
     background-color: #7165b9;
+    margin-left: 0;
+    background-image: none;
 }
 
 #third{
     background-color: black;
+    margin-left: 0;
+    background-image: none;
 }
 
 #home:hover, #away:hover, #third:hover{
@@ -292,24 +327,13 @@ figure:nth-of-type(1) button{
 
 /* Real Madrid Jerseys End */
 
-.benzemabody article:nth-of-type(5) img{
+.benzemabody article:nth-of-type(4) img{
     width: 100%;
 }
 
 /* Photo Gallery Benzema */
 
-article:nth-of-type(4) h2{
-    text-align: left;
-    text-transform: uppercase;
-    font-family: 'Oswald';
-    font-weight: 900;
-    letter-spacing: 0;
-    margin-left: 0.53em;
-    border-bottom: 3px solid #c7b184;
-    margin-right: 0.5em;
-}
-
-.benzemabody article:nth-of-type(4) {
+.benzemabody article:nth-of-type(3) {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -317,7 +341,7 @@ article:nth-of-type(4) h2{
     margin-left: 0.53em;
 }
 
-.benzemabody article:nth-of-type(4) img{
+.benzemabody article:nth-of-type(3) img{
     width: 100%;
     animation: none;
 }
@@ -332,10 +356,12 @@ article:nth-of-type(2) img{
     margin-left: 0.5em;
 }
 
-article:nth-of-type(2) h3{
+.indexmain article:nth-of-type(2) h3{
     position: relative;
     margin-left: 0.5em;
     width: 90%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
 }
 
 article:nth-of-type(2) p {
@@ -343,6 +369,8 @@ article:nth-of-type(2) p {
     margin-left: 0.5em;
     width: 90%;
     margin-bottom: 2em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 /* News End */
@@ -442,8 +470,6 @@ figure:nth-of-type(2) img{
 
 /* PLAYERS CARD 1 */
 
-
-
 .indexmain article:nth-of-type(4) article:nth-of-type(1) ul li:nth-of-type(1) button{
     background: #016ace;
     border: 1px;
@@ -463,7 +489,7 @@ article:nth-of-type(4) h2{
     letter-spacing: 5px;
 }
 
-article:nth-of-type(4) article:nth-of-type(1){
+.indexmain article:nth-of-type(4) article:nth-of-type(1){
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     height: 27em;
     width: 19em;
@@ -756,8 +782,7 @@ footer article:nth-of-type(4){
 
 /* FOOTER END */
 
-
-/* H1 Animatie */
+/* header menu */
 
 header button {
     display: grid;
@@ -771,6 +796,13 @@ header button {
     position: absolute;
     top: 0.5em;
     right: 0.7em;
+}
+
+header button:focus{
+    box-shadow: 0 0 3px 3px #00529F;
+    outline: 1px dotted transparent;
+    outline-offset: 1px;
+    background: #FEBE10;
 }
 
 /* alledrie de streepjes */
@@ -923,24 +955,24 @@ h1:hover {
     }
 }
 
- @keyframes ruzie-animation {
+@keyframes ruzie-animation {
     0% {
       transform:rotate(0);
     }
     100% {
       transform:rotate(1turn);
     }
-  }
+}
 
-  figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
+figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
     animation-name:ruzie-animation;
     animation-duration:.3s;
     animation-iteration-count:10;
-  }
+}
 
-  figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
+figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
     animation-direction:reverse;
-  }
+}
 
 @keyframes zoen-animation {
     0% {
