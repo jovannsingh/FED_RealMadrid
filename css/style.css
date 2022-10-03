@@ -53,6 +53,11 @@ nav{
     border-bottom: solid black;
 } 
 
+button a:nth-of-type(1){
+    text-decoration: none;
+    color: white;
+}
+
 /* H1 Hover Effect */
 
 h1:hover {
@@ -64,14 +69,6 @@ h1:hover {
 }
 
 /* Focus State */
-
-button:focus{
-    box-shadow: 0 0 3px 3px #7165b9;
-    outline-style: none;
-    transition: .5s;
-    color: white;
-    background: #EE324E;
-}
 
 /* header menu */
 
@@ -170,7 +167,6 @@ figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:
 figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
     animation-direction:reverse;
 }
-
 
 .mainindex button{
     background: #016ace;
@@ -858,6 +854,22 @@ footer article p{
 }
 
 /* FOOTER END */
+
+button:focus{
+    box-shadow: 0 0 3px 3px #7165b9;
+    outline-style: none;
+    transition: .5s;
+    color: white;
+    background: #EE324E;
+}
+
+a:focus{
+    box-shadow: 0 0 3px 3px #7165b9;
+    outline-style: none;
+    transition: .5s;
+    color: white;
+    background: #EE324E;
+}
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
