@@ -229,7 +229,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
 /* Benzema Main Introduction */
 
 .benzemabody section article:nth-of-type(1){
-    background-image: url(images/img_0573.jpg);
+    background-image: url(../images/img_0573.jpg)
     background-size: 31em;
     background-repeat: no-repeat;
     margin: 0;
@@ -389,7 +389,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     margin-right: auto;
     width: 60%;
     height: auto;
-    background: url(images/carousel_bg.jpeg);
+    background: url(../images/carousel_bg.jpeg)
 }
 
 #allbuttons{
