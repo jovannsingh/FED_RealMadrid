@@ -1,4 +1,5 @@
 
+// Javascript voor Jersey Carousel
 function home(){
     document.getElementById("imageslider") .src="/images/RM_Home.png";
 }
@@ -16,16 +17,7 @@ document.getElementById("away").addEventListener("click", away);
 document.getElementById("third").addEventListener("click", third);
 
 
-// function changeicon(){
-//     let displayimage = document.getElementById('ToggleImage')
-//         if(displayimage.src.match('/images/brightness-low-fill.svg')){
-//             displayimage.src = '/images/moon-stars-fill.svg'
-//         } else {
-//             displayimage.src = '/images/brightness-low-fill.svg'
-//         }
-// }   
-
-
+// Javascript voor Hamburger button op nav  
 var menustreepjes = document.querySelector("header button");
 
 menustreepjes.addEventListener("click", menuchange);
@@ -33,10 +25,3 @@ menustreepjes.addEventListener("click", menuchange);
 function menuchange() {
     menustreepjes.classList.toggle("menuOpen");
 }
-
-
-// var eersteStreepjesButton = document.querySelector("header button");
-// eersteStreepjesButton.addEventListener("click", eersteStreepjesButtonKlik);
-// function eersteStreepjesButtonKlik() {
-//   eersteStreepjesButton.classList.toggle("menuOpen");
-// }

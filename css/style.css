@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 
 html, body{
  width: 100%;
@@ -52,6 +51,138 @@ header{
 nav{
     background-color: white;
     border-bottom: solid black;
+} 
+
+/* H1 Hover Effect */
+
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #EE324E,
+                0 0 25px #EE324E,
+                0 0 50px #EE324E,
+                0 0 100px#EE324E;
+}
+
+/* Focus State */
+
+button:focus{
+    box-shadow: 0 0 3px 3px #7165b9;
+    outline-style: none;
+    transition: .5s;
+    color: white;
+    background: #EE324E;
+}
+
+/* header menu */
+
+header button {
+    display: grid;
+    place-items: center;
+    background-size: 0% 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: .5s;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.7em;
+}
+
+/* alledrie de streepjes */
+header button span {
+    grid-row-start:1;
+    grid-column-start:1;
+    width:1.2em;
+    height:.2em;
+    background-color: black;
+    transition-duration:.5s;
+}
+
+
+/* het eerste streepje */
+header button span:nth-of-type(1) {
+    transform-origin:.275em .1em;
+    transform:
+      translateY(-.4em) 
+      translateX(0) 
+      rotate(0deg) 
+      scalex(1);
+}
+
+/* het derde streepje */
+header button span:nth-of-type(3) {
+    transform-origin:calc(100% - .275em) .1em;
+    transform:
+      translateY(.4em) 
+      translateX(0) 
+      rotate(0deg) 
+      scalex(1);
+}
+
+/* het eerste streepje */
+header button.menuOpen {
+    /* de background de hele button laten vullen */
+    background-size:100% 100%;
+  }
+  
+  /* het eerste streepje */
+header button.menuOpen span:nth-of-type(1){
+    transform:
+      translateY(-.4em) 
+      translateX(-.075em) 
+      rotate(-315deg) 
+      scalex(.55);
+}
+  
+  /* het tweede streepje */
+header button.menuOpen span:nth-of-type(2){
+    transform:
+      rotate(-45deg)
+      scalex(1.25);
+}
+  
+  /* het derde streepje */
+header button.menuOpen span:nth-of-type(3){
+    transform:
+      translateY(.4em) 
+      translateX(.075em) 
+      rotate(-315deg) 
+      scalex(.55);
+}
+
+
+figure:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
+    animation-name:ruzie-animation;
+    animation-duration:.3s;
+    animation-iteration-count:10;
+}
+
+figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
+    animation-direction:reverse;
+}
+
+
+.mainindex button{
+    background: #016ace;
+    border: 1px;
+    color: white;
+    width: 13.75em;
+    transition: all 0.3s ease-in-out 0s;
+    height: 2.813em;
+    border-radius: 8px;
+    box-shadow: 0em 0.188em 0.375em #00000029;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 nav img{
@@ -63,20 +194,28 @@ nav img{
     cursor: pointer;
 }
 
+/* PHOTOS GALLERY START */
+
+figure:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure:nth-of-type(2) img{
+    width: 360px;
+    position: relative;
+    margin-bottom: 0.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+/* PHOTOS GALLERY END */
 
 main article:nth-of-type(1) img{
     width: 100%;
     position: relative;
-}
-
-/* Fixture Start */
-
-figure:nth-of-type(1){
-    display: flex;
-    flex-direction: row;
-    gap: 1.5em;
-    align-items: center;
-    flex-flow: wrap;
 }
 
 figure:nth-of-type(1) img:nth-of-type(1){
@@ -89,29 +228,6 @@ figure:nth-of-type(1) img:nth-of-type(2){
 
 figure:nth-of-type(1) img:nth-of-type(3){
     width: 80px;    
-}
-
-/* BUTTON ANIMATION */
-
-figure:nth-of-type(1) button{
-    background: #016ace;
-    border: 1px;
-    color: white;
-    width: 13.75em;
-    transition: all 0.3s ease-in-out 0s;
-    height: 2.813em;
-    margin-left: 48px;
-    border-radius: 8px;
-    box-shadow: 0em 0.188em 0.375em #00000029;
-}
-
-/* BUTTON ANIMATION END*/
-
-.moon path{
-    fill: transparent;
-    stroke: 10;
-    stroke: red;
-
 }
 
 /* Benzema Main Introduction */
@@ -157,6 +273,11 @@ figure:nth-of-type(1) button{
 }
 
 /* Benzema Personal */
+
+.benzemabody article:nth-of-type(1) article:nth-of-type(1){
+    display: inline-block;
+    margin-left: 0;
+}
 
 .benzemabody article:nth-of-type(1) h2{
     font-size: 18px;
@@ -209,15 +330,14 @@ figure:nth-of-type(1) button{
     margin-left: 0.5em;
     width: 100%;
 }
-
-.benzemabody article:nth-of-type(1) article:nth-of-type(1) {
-    display: inline-block;
-    margin-left: 0;
-}
-
 /* Benzema Bio End */
 
+
 /* Honours */
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(2){     
+    margin: -175px 0px 57px 0px;
+}
 
 .benzemabody article:nth-of-type(2) h2{
     font-size: 18px;
@@ -233,7 +353,7 @@ figure:nth-of-type(1) button{
 
 .benzemabody article:nth-of-type(2) article:nth-of-type(1) img{
     width: 100px;
-    margin: 19px 8px;
+    margin: 16px 8px -10px 13px;
 }
 
 .benzemabody article:nth-of-type(2) article:nth-of-type(1) h3{
@@ -244,17 +364,13 @@ figure:nth-of-type(1) button{
     font-size: 3em;
     display: inline-block;
     vertical-align: text-bottom;
-    margin: 10px -132px 44px -12px;
+    margin: 10px 0px 44px 0px;
 }
 
 .benzemabody article:nth-of-type(2) article:nth-of-type(1) p{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    font-weight: bold;
-    padding: 0px 14px;
-    display: inline;
-    margin-left: 0;
-    text-align: left;
+    padding: 0px 0px 0px 0px;
 }
 
 .benzemabody article:nth-of-type(2) article:nth-of-type(2) p{
@@ -263,11 +379,6 @@ figure:nth-of-type(1) button{
     width: 90%;
     line-height: 0;
 }
-
-.benzemabody article:nth-of-type(2) article:nth-of-type(2){     
-    margin: -145px 0px 57px 0px;
-}
-
 /* Honours End */
 
 
@@ -327,18 +438,22 @@ figure:nth-of-type(1) button{
 
 /* Real Madrid Jerseys End */
 
-.benzemabody article:nth-of-type(4) img{
-    width: 100%;
-}
+
+
 
 /* Photo Gallery Benzema */
 
-.benzemabody article:nth-of-type(3) {
+
+.benzemabody article:nth-of-type(3){
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     margin-bottom: 2em;
     margin-left: 0.53em;
+}
+
+.benzemabody article:nth-of-type(4) img{
+    width: 100%;
 }
 
 .benzemabody article:nth-of-type(3) img{
@@ -380,17 +495,20 @@ article:nth-of-type(2) p {
 .indexmain article:nth-of-type(3) article:nth-of-type(1){
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     width: 17em;
-    margin-left: 0.5em;
-    padding: 0px 0px 19px 0px;
+    padding: 15px 55px 15px 55px;
+    background-image: linear-gradient(-45deg, #fffd13, #A50044, #EDBB00, #FFFFFF);
+    animation: bganimation 5s ease;
+    animation-iteration-count: infinite;
+    background-size: 200% 200%;;
 }
 
 .indexmain article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(1), article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(2){
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    padding: 0px 14px;
+    padding: 0px 13px;
     display: inline;
     font-size: 2em;
-    color: #3476b6;
+    color: #016ace;
 } 
 
 .mainindex article:nth-of-type(3) article:nth-of-type(2){
@@ -404,15 +522,6 @@ article:nth-of-type(2) p {
 article:nth-of-type(3) article:nth-of-type(1) img {
     position: relative;
     margin: 25px 14px;
-}
-
-article:nth-of-type(3) button{
-    padding: 0em 0.5em 0em 0.5em;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    color: #3476b6;
 }
 
 article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3){
@@ -436,50 +545,13 @@ article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(5){
 }
 
 article:nth-of-type(3) article:nth-of-type(1) button{
-    font-weight: normal;
-    font-size: 0.9em;
-    background-color: #016ace;
-    border: 1px;
-    color: white;
-    width: 13.75em;
-    text-align: center;
-    height: 2.813em;
-    margin: 26px 0px 0px 32px;
+    margin: 26px 0px 0px 44px;
 }
 
 /* UPCOMING FIXTURE CARD END */
 
-/* PHOTOS GALLERY START */
-
-figure:nth-of-type(2){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-figure:nth-of-type(2) img{
-    width: 360px;
-    position: relative;
-    margin-bottom: 0.2em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-/* PHOTOS GALLERY END */
-
 /* PLAYERS CARD 1 */
 
-.indexmain article:nth-of-type(4) article:nth-of-type(1) ul li:nth-of-type(1) button{
-    background: #016ace;
-    border: 1px;
-    color: white;
-    width: 9.75em;
-    height: 2.813em;
-    border-radius: 8px;
-    box-shadow: 0em 0.188em 0.375em #00000029;
-    margin: 0px 0px 0px 45px;
-}
 
 article:nth-of-type(4) h2{
     text-align: center;
@@ -498,8 +570,6 @@ article:nth-of-type(4) h2{
     background-image: linear-gradient(281deg, #000000c7, transparent);
     margin-left: 0.5em
 }
-
-
 
 article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
     font-family: 'Oswald', sans-serif;
@@ -542,9 +612,20 @@ article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(2) img{
     left: 0em;
 }
 
+.indexmain article:nth-of-type(4) article:nth-of-type(1) ul li:nth-of-type(1) button{
+    margin: 0px 0px 0px 13px;
+}
+
 /* PLAYERS CARD 1 END */
 
 /* PLAYERS CARD  2 START */
+
+.indexmain article:nth-of-type(4){
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+}
 
 article:nth-of-type(4) h2{
     text-align: center;
@@ -575,7 +656,6 @@ article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) h2{
     margin-bottom: -1em;
     border-bottom: none;
     letter-spacing: 0px;
-
 }
 
 article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) p:nth-of-type(1){
@@ -605,15 +685,7 @@ article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(2) img{
     left: 0em;
 }
 
-.indexmain article:nth-of-type(4){
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    overflow-x: scroll;
-}
-
 /* PLAYERS CARD 2 END */
-
 
 /* TROPHIES START */
 
@@ -650,10 +722,6 @@ article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li{
     padding: 1em;
     padding-right: 0px;
     display: flex;
-}
-
-article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) img{
-    width: 100px;
 }
 
 article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
@@ -731,6 +799,10 @@ article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(2)
     color: #000;
 }
 
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) img{
+    width: 100px;
+}
+
 /* TROPHIES END */
 
 /* Footer */
@@ -746,143 +818,46 @@ footer h2{
     color: #000000;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
-    padding-bottom: 0.75em;
-    position: relative;
-    top: 3em;
-    text-transform: uppercase;
+    padding: 16px 0px 16px 0px;
 }
 
-footer article ul{
+footer article img{
+    width: 24%;
+    padding: 2%;
+}
+
+footer article:nth-of-type(1), footer article:nth-of-type(2){
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-footer article ul li{
-    padding: 1em;
+footer article a{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #222222;
+    text-decoration: none;
+    line-height: 2.88em;
+    width: 30%;
+    text-align: center;
 }
 
-footer article ul li img{
-    width: 5em;
-}
-footer article:nth-of-type(3){
-    position: relative;
-    left: -1em;
-}
-
-footer article:nth-of-type(3) li{
-    width: 32%;
-}
-
-footer article:nth-of-type(4){
-    position: relative;
-    left: 2em;
-    top: -3em;
+footer article p{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #222222;
+    text-decoration: none;
+    line-height: 2.88em;
+    width: 30%;
+    text-align: center;
 }
 
 /* FOOTER END */
-
-/* header menu */
-
-header button {
-    display: grid;
-    place-items: center;
-    background-size: 0% 0%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition-duration: .5s;
-    height: 3em;
-    width: 3em;
-    position: absolute;
-    top: 0.5em;
-    right: 0.7em;
-}
-
-header button:focus{
-    box-shadow: 0 0 3px 3px #00529F;
-    outline: 1px dotted transparent;
-    outline-offset: 1px;
-    background: #FEBE10;
-}
-
-/* alledrie de streepjes */
-header button span {
-    grid-row-start:1;
-    grid-column-start:1;
-    width:1.2em;
-    height:.2em;
-    background-color: black;
-    transition-duration:.5s;
-}
-
-
-/* het eerste streepje */
-header button span:nth-of-type(1) {
-    transform-origin:.275em .1em;
-    transform:
-      translateY(-.4em) 
-      translateX(0) 
-      rotate(0deg) 
-      scalex(1);
-}
-
-/* het tweede streepje */
-header button span:nth-of-type(2){
-    
-}
-
-/* het derde streepje */
-header button span:nth-of-type(3) {
-    transform-origin:calc(100% - .275em) .1em;
-    transform:
-      translateY(.4em) 
-      translateX(0) 
-      rotate(0deg) 
-      scalex(1);
-}
-
-/* het eerste streepje */
-header button.menuOpen {
-    /* de background de hele button laten vullen */
-    background-size:100% 100%;
-  }
-  
-  /* het eerste streepje */
-header button.menuOpen span:nth-of-type(1){
-    transform:
-      translateY(-.4em) 
-      translateX(-.075em) 
-      rotate(-315deg) 
-      scalex(.55);
-}
-  
-  /* het tweede streepje */
-header button.menuOpen span:nth-of-type(2){
-    transform:
-      rotate(-45deg)
-      scalex(1.25);
-}
-  
-  /* het derde streepje */
-header button.menuOpen span:nth-of-type(3){
-    transform:
-      translateY(.4em) 
-      translateX(.075em) 
-      rotate(-315deg) 
-      scalex(.55);
-}
-
-/* H1 Hover Effect */
-
-h1:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #EE324E,
-                0 0 25px #EE324E,
-                0 0 50px #EE324E,
-                0 0 100px#EE324E;
-}
-
-
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
@@ -909,7 +884,7 @@ h1:hover {
         padding: 0.5em;
     }
 
-    article:nth-of-type(4) article:nth-of-type(1){
+    .indexmain article:nth-of-type(4) article:nth-of-type(1){
         background-image: linear-gradient(308deg, #7165b940, #7165b9);
     }
 
@@ -945,7 +920,6 @@ h1:hover {
         color: white;
     }
 
-    
     article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(1){
         color: #7165b9;
     }
@@ -962,16 +936,6 @@ h1:hover {
     100% {
       transform:rotate(1turn);
     }
-}
-
-figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
-    animation-name:ruzie-animation;
-    animation-duration:.3s;
-    animation-iteration-count:10;
-}
-
-figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
-    animation-direction:reverse;
 }
 
 @keyframes zoen-animation {
@@ -991,3 +955,22 @@ figure:nth-of-type(2) img:hover{
     animation-name:zoen-animation;
     animation-duration:1s;
 }
+
+@keyframes bganimation {
+    0%{
+        background-position: 0%, 50%;
+    }
+   
+    50%{
+       background-position: 100%, 50%;
+    }
+  
+    100%{
+       background-position: 0%, 50%;
+    }
+}
+  
+
+
+
+
