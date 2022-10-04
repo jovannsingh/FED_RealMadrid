@@ -135,7 +135,8 @@ www.realmadrid.com
   Hier korte omschrijving: Het contrast tussen sommige gedeelten was niet goed zichtbaar dus hier moet ik wat op verzinnen. De dark/light mood is goed ingesteld en gebruiker kan kijken naar de website via beide modes. 
 
 
-    <img src="https://user-images.githubusercontent.com/91875010/193707813-aa05adea-7d73-4011-8320-e5c666d10d64.jpg" width="300px" alt="">
+  <img src="https://user-images.githubusercontent.com/91875010/193707813-aa05adea-7d73-4011-8320-e5c666d10d64.jpg" width="300px" alt="">
+
 </details>
 
 
@@ -147,14 +148,12 @@ www.realmadrid.com
     ### Stand van zaken
     hier dit ging goed: Dit was een hele drukke week. De deadline komt dichter bij en moet nog laatste stapjes goed zetten. Ik heb wel veel stappen gemaakt. Mijn eerste pagina is af en tweede pagina is ook 50% af. Ik ga nu meer focussen op animaties en javascript dingen voegen en focus en hover state voegen. 
 
-    dit was lastig (neem ook screenshots op van delen van je website en code): De docent vertelde dat ik te veel sections heb gebruikt en dat hoeft niet eens bij mijn HTML. Ik moet gaan gebruik maken van articles en alleen gebruik maken van section waar het nodig is. Ik moet nu mijn alle HTML gaan herschrijven en alles op nieuwe doen. Ik vind het beetje raar dat dit werd niet gezeged tegen mijn tijdens voortgangsgesprek van vorige week, maar ja beter laat dan nooit. 
- 
-  
-    <img src="https://user-images.githubusercontent.com/91875010/193708150-f470b73d-a01b-4920-b778-01b81fc29354.png" width="300px" alt="">
+    dit was lastig (neem ook screenshots op van delen van je website en code): De docent vertelde dat ik te veel sections heb gebruikt en dat hoeft niet eens bij mijn HTML. Ik moet gaan gebruik maken van articles en alleen gebruik maken van section waar het nodig is. Ik moet nu mijn alle HTML gaan herschrijven en alles op nieuwe doen. Ik vind het beetje raar dat dit werd niet gezeged tegen mijn tijdens voortgangsgesprek van vorige week, maarja beter laat dan nooit. 
 
     ### Verslag van meeting
-    hier na afloop snel de uitkomsten van de meeting vastleggen: Mijn 3e gesprek was weer met de studentasstintes. Ik liep vast bij een animatie die niet goed wou werken en gelukkig is dat opgelost door studentasstintes. Ik had nog steeds problemen met scroll-x gebruiken op speler kaarten, maar studentasstintes vertelden dat ik beide kaarten in een artical kan zetten en dan op die artical display: flex , flex-direction: row en  scroll-x: scroll
-    zetten en dan moet het goed werken. 
+    hier na afloop snel de uitkomsten van de meeting vastleggen: Mijn 3e gesprek was weer met de studentasstintes. Ik liep vast bij een animatie die niet goed wou werken en gelukkig is dat opgelost door studentasstintes. Ik had nog steeds problemen met scroll-x gebruiken op speler kaarten, maar studentasstintes vertelden dat ik beide kaarten in een artical kan zetten en dan op die artical display: flex , flex-direction: row en  scroll-x: scroll zetten en dan moet het goed werken. 
+
+  <img src="https://user-images.githubusercontent.com/91875010/193708150-f470b73d-a01b-4920-b778-01b81fc29354.png" width="300px" alt="">
   
 </details>
 
