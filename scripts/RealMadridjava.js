@@ -9,7 +9,7 @@ function away(){
 }
 
 function third(){
-    document.getElementById("imageslider") .src="images/RM_Third.png";
+    document.getElementById("imageslider") .src="images/RM_third.png";
 }
 
 document.getElementById("home").addEventListener("click", home);
