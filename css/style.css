@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 
+
+/* BODY */
 html, body{
  width: 100%;
  height: 100%;
@@ -9,6 +11,7 @@ html, body{
  overflow-x: hidden;
 }
 
+/* H1 */
 h1{
     text-align: left;
     text-transform: none;
@@ -20,6 +23,7 @@ h1{
     cursor: pointer;
 }
 
+/* BODY */
 h2{
     text-align: center;
     text-transform: uppercase;
@@ -28,38 +32,43 @@ h2{
     letter-spacing: 5px;
 }
 
+/* H3 */
 h3{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
+/* P */
 p{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
+/* UL LIST STYLE NONE */
 ul {
     list-style-type: none;
 }
 
+/* HEADER POSITION */
 header{
     position: sticky;
     top: 0em;
     z-index: 1;
 }
 
+/* NAV */
 nav{
     background-color: white;
     border-bottom: solid black;
 } 
 
+/* VIEW PLAYER BUTTON */
 button a:nth-of-type(1){
     text-decoration: none;
     color: white;
 }
 
-/* H1 Hover Effect */
-
+/* H1 NEON HOVER */
 h1:hover {
     color: #fff;
     text-shadow: 0 0 5px #EE324E,
@@ -68,10 +77,9 @@ h1:hover {
                 0 0 100px#EE324E;
 }
 
-/* Focus State */
 
-/* header menu */
 
+/* HEADER MENU */
 header button {
     display: grid;
     place-items: center;
@@ -86,7 +94,7 @@ header button {
     right: 0.7em;
 }
 
-/* alledrie de streepjes */
+/* ALLE DRIE STREEPJES */
 header button span {
     grid-row-start:1;
     grid-column-start:1;
@@ -96,8 +104,7 @@ header button span {
     transition-duration:.5s;
 }
 
-
-/* het eerste streepje */
+/* EERSTE STREEPJE */
 header button span:nth-of-type(1) {
     transform-origin:.275em .1em;
     transform:
@@ -107,7 +114,7 @@ header button span:nth-of-type(1) {
       scalex(1);
 }
 
-/* het derde streepje */
+/* DERDE STREEPJES */
 header button span:nth-of-type(3) {
     transform-origin:calc(100% - .275em) .1em;
     transform:
@@ -119,7 +126,6 @@ header button span:nth-of-type(3) {
 
 /* het eerste streepje */
 header button.menuOpen {
-    /* de background de hele button laten vullen */
     background-size:100% 100%;
   }
   
@@ -148,7 +154,7 @@ header button.menuOpen span:nth-of-type(3){
       scalex(.55);
 }
 
-
+/* MAIN FIXTURE OP HOME PAGINA */
 figure:nth-of-type(1){
     display: flex;
     flex-direction: row;
@@ -158,6 +164,7 @@ figure:nth-of-type(1){
     justify-content: space-around;
 }
 
+/* ANIMATIE OP MAIN FIXTURE */
 figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
     animation-name:ruzie-animation;
     animation-duration:.3s;
@@ -168,6 +175,7 @@ figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
     animation-direction:reverse;
 }
 
+/* VOOR ALLE BUTTONS OP HOME PAGINA */
 .mainindex button{
     background: #016ace;
     border: 1px;
@@ -181,6 +189,7 @@ figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
     text-transform: uppercase;
 }
 
+/* NAV IMG */
 nav img{
     width: 2em;
     padding: 0.2em 0.5em 0em 0.5em;
@@ -190,8 +199,7 @@ nav img{
     cursor: pointer;
 }
 
-/* PHOTOS GALLERY START */
-
+/* FOTOS GALLERY OP PAGINA 1 */
 figure:nth-of-type(2){
     display: flex;
     flex-direction: column;
@@ -207,13 +215,12 @@ figure:nth-of-type(2) img{
     margin-right: 0.5em;
 }
 
-/* PHOTOS GALLERY END */
-
 main article:nth-of-type(1) img{
     width: 100%;
     position: relative;
 }
 
+/* LOGOS WIDTH VAN MAIN FIXTURE OP PAGINA 1 */
 figure:nth-of-type(1) img:nth-of-type(1){
     width: 80px;    
 }
@@ -226,10 +233,18 @@ figure:nth-of-type(1) img:nth-of-type(3){
     width: 80px;    
 }
 
-/* Benzema Main Introduction */
+/* ANIAMTIE OP FOTOS GALLERY OP PAGINA 1 */
+figure:nth-of-type(2) img:hover{
+    animation-name:jumpman;
+    animation-duration:.5s;
+    animation-iteration-count:8;
+    animation-direction:alternate;
+    animation-timing-function:cubic-bezier(0.125, 0.995, 1.000, 1);
+}
 
+/* BENZEMA VOORGESTELD MET FOTO OP PAGINA 2 */
 .benzemabody section article:nth-of-type(1){
-    background-image: url(../images/img_0573.jpg)
+    background-image: url(../images/img_0573.jpg);
     background-size: 31em;
     background-repeat: no-repeat;
     margin: 0;
@@ -242,6 +257,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     top: 6.6em;
 }
 
+/* BENZEMA VOORGESTELD MET NAAM OP PAGINA 2 */
 .benzemabody section article:nth-of-type(1) h1{
     font-family: Arial, sans-serif;
     text-align: center;
@@ -254,6 +270,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     color: white;
 }
 
+/* BENZEMA VOORGESTELD MET POSITIE OP PAGINA 2 */
 .benzemabody section article:nth-of-type(1) h2{
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -268,8 +285,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     border-bottom: 0;
 }
 
-/* Benzema Personal */
-
+/* BENZEMA INFORMATIE OP PAGINA 2 */
 .benzemabody article:nth-of-type(1) article:nth-of-type(1){
     display: inline-block;
     margin-left: 0;
@@ -326,10 +342,8 @@ figure:nth-of-type(1) img:nth-of-type(3){
     margin-left: 0.5em;
     width: 100%;
 }
-/* Benzema Bio End */
 
-
-/* Honours */
+/* /* BENZEMA TROPHIEEN OP PAGINA 2 */ */
 
 .benzemabody article:nth-of-type(2) article:nth-of-type(2){     
     margin: -175px 0px 57px 0px;
@@ -375,10 +389,8 @@ figure:nth-of-type(1) img:nth-of-type(3){
     width: 90%;
     line-height: 0;
 }
-/* Honours End */
 
-
-/* Real Madrid Jerseys */
+/* REAL MADRID TENUE */
 .benzemabody article:nth-of-type(4){
    position: relative;
 }
@@ -389,9 +401,10 @@ figure:nth-of-type(1) img:nth-of-type(3){
     margin-right: auto;
     width: 60%;
     height: auto;
-    background: url(../images/carousel_bg.jpeg)
+    background: url(../images/carousel_bg.jpeg);
 }
 
+/* POSITIE OP REAL MADRID TENUE BUTTON */
 #allbuttons{
     display: flex;
     flex-direction: row;
@@ -402,6 +415,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     position: relative;
 }
 
+/* BUTTON OM REAL MADRID TENUE TE KIEZEN */
 .benzemabody #home, #away, #third{
     height: 2em;
     width: 2em;
@@ -409,37 +423,34 @@ figure:nth-of-type(1) img:nth-of-type(3){
     cursor: pointer;
 }
 
+/* HOME TENUE BUTTON */
 #home{
     background-color: #b4b4b4;
     margin: 0;
 }
 
+/* AWAY TENUE BUTTON */
 #away{
     background-color: #7165b9;
     margin-left: 0;
     background-image: none;
 }
 
+/* THIRD TENUE BUTTON */
 #third{
     background-color: black;
     margin-left: 0;
     background-image: none;
 }
 
+/* HOVER OP ALLE TENUE BUTTONS */
 #home:hover, #away:hover, #third:hover{
     border: #d89300;
     border-style: solid;
     border-width: 3px;
 }
 
-/* Real Madrid Jerseys End */
-
-
-
-
-/* Photo Gallery Benzema */
-
-
+/* SCROLL OP BENZEMA FOTOS OP PAGINA 2 */
 .benzemabody article:nth-of-type(3){
     display: flex;
     flex-direction: row;
@@ -457,10 +468,7 @@ figure:nth-of-type(1) img:nth-of-type(3){
     animation: none;
 }
 
-/* Photo Gallery Benzema End */
-
-
-/* News Start */
+/* NIEUWS ARTICLES OP PAGINA 1 */
 
 article:nth-of-type(2) img{
     width: 96%;
@@ -484,10 +492,9 @@ article:nth-of-type(2) p {
     font-weight: 300;
 }
 
-/* News End */
 
-/* UPCOMING FIXTURE CARD */
 
+/* UPCOMING FIXTURE CARD MET ANIMATIE  */
 .indexmain article:nth-of-type(3) article:nth-of-type(1){
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     width: 17em;
@@ -544,11 +551,8 @@ article:nth-of-type(3) article:nth-of-type(1) button{
     margin: 26px 0px 0px 44px;
 }
 
-/* UPCOMING FIXTURE CARD END */
 
-/* PLAYERS CARD 1 */
-
-
+/* BENZEMA SPELER KAART */
 article:nth-of-type(4) h2{
     text-align: center;
     text-transform: uppercase;
@@ -612,10 +616,7 @@ article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(2) img{
     margin: 0px 0px 0px 13px;
 }
 
-/* PLAYERS CARD 1 END */
-
-/* PLAYERS CARD  2 START */
-
+/* SCROLL OP BEIDE SPELER KAARTEN */
 .indexmain article:nth-of-type(4){
     display: flex;
     flex-direction: row;
@@ -681,9 +682,7 @@ article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(2) img{
     left: 0em;
 }
 
-/* PLAYERS CARD 2 END */
-
-/* TROPHIES START */
+/* TROPHIES OP PAGINA 1 */
 
 article:nth-of-type(10){
     position: relative;
@@ -799,13 +798,13 @@ article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1
     width: 100px;
 }
 
-/* TROPHIES END */
 
-/* Footer */
+/* FOOTER */
 
 footer{
     background-color: #F0F0F0;
 }
+
 
 footer h2{
     text-align: center;
@@ -853,8 +852,7 @@ footer article p{
     text-align: center;
 }
 
-/* FOOTER END */
-
+/* FOCUS STATE VOOR ALLE BUTTONS */
 button:focus{
     box-shadow: 0 0 3px 3px #7165b9;
     outline-style: none;
@@ -863,6 +861,7 @@ button:focus{
     background: #EE324E;
 }
 
+/* FOCUS STATE VOOR A TAGS */
 a:focus{
     box-shadow: 0 0 3px 3px #7165b9;
     outline-style: none;
@@ -871,7 +870,7 @@ a:focus{
     background: #EE324E;
 }
 
-/* dark mode */
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
     html{background-color: black;}
 
@@ -941,6 +940,7 @@ a:focus{
     }
 }
 
+/* KEY FRAMES VOOR RUZIE ANIMATIE GEBRUIKT OP PAGINA 1 */
 @keyframes ruzie-animation {
     0% {
       transform:rotate(0);
@@ -950,24 +950,17 @@ a:focus{
     }
 }
 
-@keyframes zoen-animation {
+/* KEY FRAMES VOOR JUMPMAN ANIMATIE GEBRUIKT OP PAGINA 1 */
+@keyframes jumpman {
     0% {
-      transform:scale(1);
+      transform:translateY(0);
     }
-    50% {
-        transform:scale(1);
-        transform: skew(20deg,20deg);
-      }
     100% {
-      transform:scale(2);
+      transform:translateY(-8rem);
     }
-}
-  
-figure:nth-of-type(2) img:hover{
-    animation-name:zoen-animation;
-    animation-duration:1s;
 }
 
+/* KEYFRAMES OP GRADIENT ANIMATIE GEBRUIKT OP PAGINA 2 */
 @keyframes bganimation {
     0%{
         background-position: 0%, 50%;
