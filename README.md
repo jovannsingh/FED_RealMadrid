@@ -33,9 +33,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
- Ik heb gekozen voor de website van Real Madrid, want ik ben sinds klein een fan ben geweest van Real Madrid en heb daarom vaker hun website bezocht.  Als een bezoeker heb ik soms moeite gehad met dingen op website van Real Madrid en ik wil graag dat verbeteren in aankomende weken.
-www.realmadrid.com
-  
+Ik heb gekozen voor de website van Real Madrid, want ik ben sinds klein een fan ben geweest van Real Madrid en heb daarom vaker hun website bezocht.  Als een bezoeker heb ik soms moeite gehad met dingen op website van Real Madrid en ik wil graag dat verbeteren in aankomende weken. Veder wil de website beter maken op toegankelijkheid voor mensen met een beperking.
+www.realmadrid.com - Pagina 1
+https://www.realmadrid.com/en/football/squad/karim-benzema - Pagina 2
+
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home Pagina
@@ -145,13 +146,13 @@ www.realmadrid.com
 <details>
   <summary>uitwerken voor 3e voortgang</summary>
 
-    ### Stand van zaken
-    hier dit ging goed: Dit was een hele drukke week. De deadline komt dichter bij en moet nog laatste stapjes goed zetten. Ik heb wel veel stappen gemaakt. Mijn eerste pagina is af en tweede pagina is ook 50% af. Ik ga nu meer focussen op animaties en javascript dingen voegen en focus en hover state voegen. 
+  ### Stand van zaken
+  hier dit ging goed: Dit was een hele drukke week. De deadline komt dichter bij en moet nog laatste stapjes goed zetten. Ik heb wel veel stappen gemaakt. Mijn eerste pagina is af en tweede pagina is ook 50% af. Ik ga nu meer focussen op animaties en javascript dingen voegen en focus en hover state voegen. 
 
-    dit was lastig (neem ook screenshots op van delen van je website en code): De docent vertelde dat ik te veel sections heb gebruikt en dat hoeft niet eens bij mijn HTML. Ik moet gaan gebruik maken van articles en alleen gebruik maken van section waar het nodig is. Ik moet nu mijn alle HTML gaan herschrijven en alles op nieuwe doen. Ik vind het beetje raar dat dit werd niet gezeged tegen mijn tijdens voortgangsgesprek van vorige week, maarja beter laat dan nooit. 
+  dit was lastig (neem ook screenshots op van delen van je website en code): De docent vertelde dat ik te veel sections heb gebruikt en dat hoeft niet eens bij mijn HTML. Ik moet gaan gebruik maken van articles en alleen gebruik maken van section waar het nodig is. Ik moet nu mijn alle HTML gaan herschrijven en alles op nieuwe doen. Ik vind het beetje raar dat dit werd niet gezeged tegen mijn tijdens voortgangsgesprek van vorige week, maarja beter laat dan nooit. 
 
-    ### Verslag van meeting
-    hier na afloop snel de uitkomsten van de meeting vastleggen: Mijn 3e gesprek was weer met de studentasstintes. Ik liep vast bij een animatie die niet goed wou werken en gelukkig is dat opgelost door studentasstintes. Ik had nog steeds problemen met scroll-x gebruiken op speler kaarten, maar studentasstintes vertelden dat ik beide kaarten in een artical kan zetten en dan op die artical display: flex , flex-direction: row en  scroll-x: scroll zetten en dan moet het goed werken. 
+  ### Verslag van meeting
+  hier na afloop snel de uitkomsten van de meeting vastleggen: Mijn 3e gesprek was weer met de studentasstintes. Ik liep vast bij een animatie die niet goed wou werken en gelukkig is dat opgelost door studentasstintes. Ik had nog steeds problemen met scroll-x gebruiken op speler kaarten, maar studentasstintes vertelden dat ik beide kaarten in een artical kan zetten en dan op die artical display: flex , flex-direction: row en  scroll-x: scroll zetten en dan moet het goed werken. 
 
   <img src="https://user-images.githubusercontent.com/91875010/193708150-f470b73d-a01b-4920-b778-01b81fc29354.png" width="300px" alt="">
   
