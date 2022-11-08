@@ -186,9 +186,9 @@ https://www.realmadrid.com/en/football/squad/karim-benzema - Pagina 2
 ## Herkansing)
 
 <details>
-  <summary>uitwerken voor eindgesprek</summary>
+  <summary>uitwerken voor herkansing</summary>
 
-  ### Voor de herkasing moest ik een paar aanpassingen doen aan mijn site. Tijdens de eindgesprek vertelde de docent fouten die ik moest verbeteren.
+  Voor de herkasing moest ik een paar aanpassingen doen aan mijn site. Tijdens de eindgesprek vertelde de docent fouten die ik moest verbeteren.
   Ik begon eerst met laten werken van hamburger menu op mijn site, Ik ging weer de oefening van Week 3 maken en vervolgens weer proberen om het te laten     werken, maar het werkte niet. Vervolgens ging ik op youtube zoeken naar tutorials en kwam een filmpje tegen. Na het volgen van de filmpje lukte het wel. 
   Op mijn had ik een button die in waar a tag in button zat en dat was niet goed. Ik heb het aangepast en de a tag vormgegeven als een button. 
 
