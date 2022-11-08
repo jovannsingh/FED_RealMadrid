@@ -1,27 +1,9 @@
+//  Javascript voor Hamburger button op nav  
+var toggleButton = document.getElementsByClassName('toggle-button')[0] //[0]=  hij selecteert hier de eerste array en dat is de toggle button
+var navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-// Javascript voor Jersey Carousel
-function home(){
-    document.getElementById("imageslider") .src="images/RM_Home.png";
-}
-
-function away(){
-    document.getElementById("imageslider") .src="images/RM_Away.png";
-}
-
-function third(){
-    document.getElementById("imageslider") .src="images/RM_third.png";
-}
-
-document.getElementById("home").addEventListener("click", home);
-document.getElementById("away").addEventListener("click", away);
-document.getElementById("third").addEventListener("click", third);
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+});
 
 
-// Javascript voor Hamburger button op nav  
-var menustreepjes = document.querySelector("header button");
-
-menustreepjes.addEventListener("click", menuchange);
-
-function menuchange() {
-    menustreepjes.classList.toggle("menuOpen");
-}
