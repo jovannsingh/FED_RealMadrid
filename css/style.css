@@ -1,77 +1,954 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
-main {
- flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+
+/* BODY */
+html, body{
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
 }
 
+/* H1 */
 h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+    text-align: left;
+    text-transform: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 2.25em;
+    margin-left: 0.5em;
+    width: 95%;
+    cursor: pointer;
 }
 
+/* BODY */
 h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
 }
+
+/* H3 */
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* P */
 p{
     font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
-section:nth-of-type(1){
-    max-width: 100%;
-    position: relative;
+/* UL LIST STYLE NONE */
+ul {
+    list-style-type: none;
 }
 
-section:nth-of-type(1) img{
-    left: 3em;
-    width: 100%;
+/* HEADER POSITION */
+header{
+    position: sticky;
+    top: 0em;
+    z-index: 1;
 }
 
-section:nth-of-type(2){
- display: grid;
- grid-template-columns: 10fr 10fr 10fr; 
- grid-gap:1em; 
- align-items: center;
- margin-top: 50px;
- margin-left: 40px;
+/* NAV */
+nav{
+    background-color: white;
+    border-bottom: solid black;
+} 
+
+/* VIEW PLAYER BUTTON */
+
+.view-btn{
+    background-color: #016ace;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-left: 2em;
 }
 
-section:nth-of-type(2) img{
-    width: 60%;
-    
+/* H1 NEON HOVER */
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #EE324E,
+                0 0 25px #EE324E,
+                0 0 50px #EE324E,
+                0 0 100px#EE324E;
 }
 
-section:nth-of-type(3){
-    position: relative;
+/* HEADER MENU */
+header img{
+    width: 35px;
+    margin-left: 0.5em;
 }
 
-section button{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: purple;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    font-weight: bold;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    background-color: #EE324E;
+    color: black;
+    padding: 1em;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.toggle-button{
     position: absolute;
-    left: 70px;
-    background-color: #016ace; 
+    top: 1.5em;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 15px;
+}
+
+.toggle-button .bar{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    border-radius: 1em;
+}
+
+/* MAIN FIXTURE OP HOME PAGINA */
+.mainfixture{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+/* ANIMATIE OP MAIN FIXTURE */
+figure:nth-of-type(1):hover img:nth-of-type(1), figure:nth-of-type(1):hover img:nth-of-type(3){
+    animation-name:ruzie-animation;
+    animation-duration:.3s;
+    animation-iteration-count:10;
+}
+
+figure:nth-of-type(1) img:nth-of-type(1):hover, img:nth-of-type(3):hover{
+    animation-direction:reverse;
+}
+
+/* VOOR ALLE BUTTONS OP HOME PAGINA */
+.mainindex button{
+    background: #016ace;
     border: 1px;
     color: white;
-    width: 13.75rem;
-    height: 2.813rem;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 34px;
+    width: 13.75em;
+    transition: all 0.3s ease-in-out 0s;
+    height: 2.813em;
+    border-radius: 8px;
+    box-shadow: 0em 0.188em 0.375em #00000029;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
-section:nth-of-type(4){
+/* FOTOS GALLERY OP PAGINA 1 */
+figure:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure:nth-of-type(2) img{
+    width: 360px;
     position: relative;
-    margin-top: 155px;
+    margin-bottom: 0.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+main article:nth-of-type(1) img{
+    width: 100%;
+    position: relative;
+}
+
+/* LOGOS WIDTH VAN MAIN FIXTURE OP PAGINA 1 */
+figure:nth-of-type(1) img:nth-of-type(1){
+    width: 80px;    
+}
+
+figure:nth-of-type(1) img:nth-of-type(2){
+    width: 70px;    
+}
+
+figure:nth-of-type(1) img:nth-of-type(3){
+    width: 80px;    
+}
+
+/* ANIAMTIE OP FOTOS GALLERY OP PAGINA 1 */
+figure:nth-of-type(2) img:hover{
+    animation-name:jumpman;
+    animation-duration:.5s;
+    animation-iteration-count:8;
+    animation-direction:alternate;
+    animation-timing-function:cubic-bezier(0.125, 0.995, 1.000, 1);
+}
+
+/* BENZEMA VOORGESTELD MET FOTO OP PAGINA 2 */
+.benzemabody section article:nth-of-type(1){
+    background-image: url(../images/img_0573.jpg);
+    background-size: 31em;
+    background-repeat: no-repeat;
+    margin: 0;
+} 
+
+.benzemabody section article:nth-of-type(1) img{
+    width: 345px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    top: 6.6em;
+}
+
+/* BENZEMA VOORGESTELD MET NAAM OP PAGINA 2 */
+.benzemabody section article:nth-of-type(1) h1{
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-bottom: 41px;
+    font-weight: bold;
+    margin-left: 0;
+    width: 100%;
+    font-size: 30px;
+    background-color: #7165b9b5;
+    margin: 0;
+    color: white;
 }
 
-section:nth-of-type(5) img{
-    left: 3em;
+/* BENZEMA VOORGESTELD MET POSITIE OP PAGINA 2 */
+.benzemabody section article:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 0;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 18px;
+    background-color: #7165b9b5;
+    color: white;
+    border-bottom: 0;
+}
+
+/* BENZEMA INFORMATIE OP PAGINA 2 */
+.benzemabody article:nth-of-type(1) article:nth-of-type(1){
+    display: inline-block;
+    margin-left: 0;
+}
+
+.benzemabody article:nth-of-type(1) h2{
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-left: 0.53em;
+    border-bottom: 3px solid #c7b184;
+    margin-right: 0.5em;
+}
+
+.benzemabody section article:nth-of-type(1) article:nth-of-type(2){
+    display: inline-block;
+    margin: 0;
+    margin-left: 0.5em;
+}
+
+.benzemabody article:nth-of-type(1) article:nth-of-type(3){
+    vertical-align: top;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 11em; 
+}
+
+.benzemabody article:nth-of-type(1) article:nth-of-type(2){
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    text-align: justify;
+    margin-left: 12em;
+}
+
+.benzemabody article:nth-of-type(1) h3{
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    margin-left: 0.5em;
+}
+
+.benzemabody article:nth-of-type(1) p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    width: 100%;
+    margin-left: 0.5em;
+}
+
+/* /* BENZEMA TROPHIEEN OP PAGINA 2 */ 
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(2){     
+    margin: -175px 0px 57px 0px;
+}
+
+.benzemabody article:nth-of-type(2) h2{
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-left: 0.53em;
+    border-bottom: 3px solid #c7b184;
+    margin-right: 0.5em;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) img{
+    width: 100px;
+    margin: 16px 8px -10px 13px;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 10px 0px 5px 0px;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(1) p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    padding: 0px 0px 0px 0px;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(2) p{
+    text-align: right;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.benzemabody article:nth-of-type(2) article:nth-of-type(2){
+    margin: -164px 0px 57px 0px;
+}
+
+
+/* SCROLL OP BENZEMA FOTOS OP PAGINA 2 */
+.benzemabody article:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 2em;
+    margin-left: 0.53em;
+}
+
+.benzemabody article:nth-of-type(4) img{
     width: 100%;
 }
 
-section:nth-of-type(6) img{
-    left: 3em;
+.benzemabody article:nth-of-type(3) img{
+    width: 100%;
+    animation: none;
+}
+
+/* NIEUWS ARTICLES OP PAGINA 1 */
+
+article:nth-of-type(2) img{
+    width: 96%;
+    margin-left: 0.5em;
+}
+
+.indexmain article:nth-of-type(2) h3{
+    position: relative;
+    margin-left: 0.5em;
+    width: 90%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+
+article:nth-of-type(2) p {
+    position: relative;
+    margin-left: 0.5em;
+    width: 90%;
+    margin-bottom: 2em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* UPCOMING FIXTURE CARD MET ANIMATIE  */
+.indexmain article:nth-of-type(3) article:nth-of-type(1){
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 17em;
+    padding: 15px 55px 15px 55px;
+    background-image: linear-gradient(-45deg, #fffd13, #A50044, #EDBB00, #FFFFFF);
+    animation: bganimation 5s ease;
+    animation-iteration-count: infinite;
+    background-size: 200% 200%;;
+}
+
+.indexmain article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(1), article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(2){
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    padding: 0px 13px 0px 38px;
+    display: inline;
+    font-size: 1.688rem;
+    color: #016ace;
+} 
+
+.mainindex article:nth-of-type(3) article:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) img {
+    position: relative;
+    margin: 25px 14px;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3){
+    text-align: center;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 0em;
+    position: relative;
+    font-size: 0.938em;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(4){
+    text-align: center;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(5){
+    text-align: center;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 0em;
+}
+
+article:nth-of-type(3) article:nth-of-type(1) button{
+    margin: 26px 0px 0px 44px;
+}
+
+
+/* BENZEMA SPELER KAART */
+article:nth-of-type(4) h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+.indexmain article:nth-of-type(4) article:nth-of-type(1){
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 27em;
+    width: 19em;
+    border-radius: 10px;
+    background-color: #ffffffc7;
+    background-image: linear-gradient(281deg, #000000c7, transparent);
+    margin-left: 0.5em
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    color: #000000c7;
+    font-weight: bolder;
+    margin-left: -1.5em;
+    padding: 2px 0px 0px 12px;
+    margin-bottom: -1em;
+    letter-spacing: 0px;
+    margin-right: 0;
+    border-bottom: 0;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    color: dimgrey;
+    font-weight: bolder;
+    margin-bottom: -3em;
+    margin-left: -1.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    color: black;
+    font-weight: bolder;
+    margin-left: -0.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(2) img{
+    width: 350px;
+    position: relative;
+    right: 0em;
+    top: -11.2em;
+    left: 0em;
+}
+
+.indexmain article:nth-of-type(4) article:nth-of-type(1) ul li:nth-of-type(1) button{
+    margin: 0px 0px 0px 13px;
+}
+
+/* SCROLL OP BEIDE SPELER KAARTEN */
+.indexmain article:nth-of-type(4){
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+article:nth-of-type(4) h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+article:nth-of-type(4) article:nth-of-type(2){
+    margin-left: 0.5em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 27em;
+    width: 19em;
+    border-radius: 10px;
+    background-color: #ffffffc7;
+    background-image: linear-gradient(360deg, #000000c7, transparent);
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    color: #000000c7;
+    font-weight: bolder;
+    margin-left: -1em;
+    padding: 28px 0px 0px 0px;
+    margin-bottom: -1em;
+    border-bottom: none;
+    letter-spacing: 0px;
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) p:nth-of-type(1){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    color: dimgrey;
+    font-weight: bolder;
+    margin-bottom: -3em;
+    margin-left: -1.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) p:nth-of-type(2){
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    color: black;
+    font-weight: bolder;
+    margin-left: -0.5em;
+}
+
+article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(2) img{
+    width: 350px;
+    position: relative;
+    right: 0em;
+    top: -14.2em;
+    left: 0em;
+}
+
+/* TROPHIES OP PAGINA 1 */
+
+article:nth-of-type(10){
+    position: relative;
+    top: 17em;
+}
+
+article:nth-of-type(5) h2{
+    color: #555;
+    font-size: 2em;
+    letter-spacing: 14.5px;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) {
+    box-sizing: border-box;
+    position: relative;
+    margin: -16px 42px 0px 3px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1){
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li{
+    flex-direction: column;
+    padding: 1em;
+    padding-right: 0px;
+    display: flex;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+    margin: 15px 0 0 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
     width: 100%;
 }
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+    width: 100%;
+    max-width: 9.375em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) img{
+    width: 100px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(1){
+    margin: 15px 0 0 49px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
+    width: 100%;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(2){
+    width: 100%;
+    height: 3.125em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) img{
+    width: 100px;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(1){
+    margin: 15px 0 0 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    letter-spacing: -2.16px;
+    color: #3476B680;
+    width: 100%;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(2){
+    width: 100%;
+    max-width: 9.375em;
+    height: 3.125em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .875em;
+    line-height: 1.0625em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+article:nth-of-type(5) article:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) img{
+    width: 100px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #F0F0F0;
+}
+
+
+footer h2{
+    text-align: center;
+    font-size: 0.94em;
+    letter-spacing: 0.14em;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    padding: 16px 0px 16px 0px;
+}
+
+footer figure img{
+    width: 24%;
+    padding: 2%;
+}
+
+.benzemabody footer figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 0em;
+    justify-content: space-around;
+}
+
+footer article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer article a{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #222222;
+    text-decoration: none;
+    line-height: 2.88em;
+    width: 30%;
+    text-align: center;
+}
+
+footer article p{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #222222;
+    text-decoration: none;
+    line-height: 2.88em;
+    text-align: center;
+}
+
+footer figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+/* FOCUS STATE VOOR ALLE BUTTONS */
+button:focus{
+    box-shadow: 0 0 3px 3px #7165b9;
+    outline-style: none;
+    transition: .5s;
+    color: white;
+    background: #EE324E;
+}
+
+/* FOCUS STATE VOOR A TAGS */
+a:focus{
+    box-shadow: 0 0 3px 3px #7165b9;
+    outline-style: none;
+    transition: .5s;
+    color: white;
+    background: #EE324E;
+}
+
+/* HAMBURGER MENU */
+@media (max-width: 400px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column; /*om a's onder elkaar te brengen*/
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
+/* HAMBURGER MENU */
+
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    html{background-color: black;}
+
+    h1{
+        color: #EE324E;
+    }
+
+    h2{
+        color: #c5ff2b;
+    }
+
+    h3{
+        color: #7165b9;
+    }
+
+    p{
+        color: white;
+    }
+
+    figure:nth-of-type(1) img:nth-of-type(2){
+        background-color: white;
+        padding: 0.5em;
+    }
+
+    .indexmain article:nth-of-type(4) article:nth-of-type(1){
+        background-image: linear-gradient(308deg, #7165b940, #7165b9);
+    }
+
+    article:nth-of-type(4) article:nth-of-type(2){
+        background-image: linear-gradient(308deg, #7165b940, #7165b9);
+    }
+
+    article:nth-of-type(4) article:nth-of-type(1) li:nth-of-type(1) h2{
+        color: white;
+    }
+
+    article:nth-of-type(4) article:nth-of-type(2) li:nth-of-type(1) h2{
+        color: white;
+    }
+
+    article:nth-of-type(5) h2{
+        color: #c5ff2b;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(1) p:nth-of-type(2){
+        color: white;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(2) p:nth-of-type(2){
+        color: white;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(1){
+        color: #7165b9;
+    }
+
+    article:nth-of-type(5) article:nth-of-type(1) li:nth-of-type(3) p:nth-of-type(2){
+        color: white;
+    }
+}
+
+
+
+/* KEY FRAMES VOOR RUZIE ANIMATIE GEBRUIKT OP PAGINA 1 */
+@keyframes ruzie-animation {
+    0% {
+      transform:rotate(0);
+    }
+    100% {
+      transform:rotate(1turn);
+    }
+}
+
+/* KEY FRAMES VOOR JUMPMAN ANIMATIE GEBRUIKT OP PAGINA 1 */
+@keyframes jumpman {
+    0% {
+      transform:translateY(0);
+    }
+    100% {
+      transform:translateY(-8rem);
+    }
+}
+
+/* KEYFRAMES OP GRADIENT ANIMATIE GEBRUIKT OP PAGINA 2 */
+@keyframes bganimation {
+    0%{
+        background-position: 0%, 50%;
+    }
+   
+    50%{
+       background-position: 100%, 50%;
+    }
+  
+    100%{
+       background-position: 0%, 50%;
+    }
+}
+  
+
+
+
+
