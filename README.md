@@ -192,9 +192,9 @@ https://www.realmadrid.com/en/football/squad/karim-benzema - Pagina 2
   Ik begon eerst met laten werken van hamburger menu op mijn site, Ik ging weer de oefening van Week 3 maken en vervolgens weer proberen om het te laten     werken, maar het werkte niet. Vervolgens ging ik op youtube zoeken naar tutorials en kwam een filmpje tegen. Na het volgen van de filmpje lukte het wel. 
   Op mijn had ik een button die in waar a tag in button zat en dat was niet goed. Ik heb het aangepast en de a tag vormgegeven als een button. 
 
-  <img width="372" alt="Screenshot 2022-11-08 at 17 21 11" src="https://user-images.githubusercontent.com/91875010/200619619- a95bac96-158f-490a-9582-86d3c4d81721.png" width="300px>
+  <img src="https://user-images.githubusercontent.com/91875010/200619619-a95bac96-158f-490a-9582-86d3c4d81721.png" width="300px>
 
-  <img width="372" alt="Screenshot 2022-11-08 at 17 21 45" src="https://user-images.githubusercontent.com/91875010/200619676-     4c463505-6ced-4467-94cd-9e130bb0d9f6.png" width="300px>
+  <img src="https://user-images.githubusercontent.com/91875010/200619676-4c463505-6ced-4467-94cd-9e130bb0d9f6.png" width="300px>
    
 </details>
 
